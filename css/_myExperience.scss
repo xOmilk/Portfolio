@@ -1,0 +1,30 @@
+.myExperience {
+    padding: 20px;
+    max-width: 100%;
+    max-height: 100dvh;
+    border: 2px solid $red;
+
+    @include createDisplayFlex(column, wrap);
+    align-items: center;
+    justify-content: center;
+    .text {
+        @include createDisplayFlex(column, nowrap);
+        @include createCard();
+
+        margin-top: 30px;
+        border: solid 1px $red;
+        overflow:auto;
+        scrollbar-width: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        h2{
+            color: $brown;
+            text-align: left;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}

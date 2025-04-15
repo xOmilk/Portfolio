@@ -1,0 +1,95 @@
+.mine {
+    float: left;
+
+    margin-left: 150px;
+
+    max-width: 150px;
+    height: 100dvh;
+
+    @include createDisplayFlex(column, wrap);
+    align-items: center;
+    justify-content: center;
+
+    background-color: $brown;
+    border: 2px solid $blackout;
+    border-radius: 5px;
+    padding: 10px;
+
+    h1{
+        display: none;
+    }
+
+    img {
+        margin-bottom: 20px;
+        border: white 1px;
+        border-style: groove;
+        display: block;
+        width: 64px;
+        height: 64px;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    p {
+
+        text-align: center;
+        color: white;
+    }
+
+    .findMe {
+        /* @include createDisplayFlex(column, wrap); */
+
+        #linkedin {
+            @include createDisplayFlex(column, wrap);
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+            padding: 5px 20px;
+            /* border: white solid 0.5px; */
+            color: white;
+            text-align: left;
+            margin-top: 20px;
+
+            img {
+                margin-top: 0px;
+                text-align: center;
+                border: none;
+                width: 32px;
+                height: 32px;
+
+            }
+
+            p {
+                font-size: 12px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+        #github {
+            @extend #linkedin;
+        }
+
+        #whatsapp {
+            @extend #linkedin;
+
+        }
+        #email{
+            @extend #linkedin;
+        }
+
+    }
+
+
+
+}

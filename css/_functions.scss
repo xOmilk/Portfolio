@@ -1,0 +1,29 @@
+@mixin createCard() {
+    height: 300px;
+    max-width: 70%;
+    background: $orange;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    p{
+        color: $blackout;
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@mixin createDisplayFlex($displayDirection, $typeOfWrap){
+
+    display: flex;
+    flex-direction: $displayDirection;
+    flex-wrap: $typeOfWrap
+
+}
+
+
+@mixin respond-between($min, $max) {
+    @media screen and (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  }

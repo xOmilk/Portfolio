@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.mine {
+  float: left;
+  margin-left: 150px;
+  max-width: 150px;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #251819;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+}
+.mine h1 {
+  display: none;
+}
+.mine img {
+  margin-bottom: 20px;
+  border: white 1px;
+  border-style: groove;
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+.mine h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.mine p {
+  text-align: center;
+  color: white;
+}
+.mine .findMe {
+  /* @include createDisplayFlex(column, wrap); */
+}
+.mine .findMe #linkedin, .mine .findMe #email, .mine .findMe #whatsapp, .mine .findMe #github {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px 20px;
+  /* border: white solid 0.5px; */
+  color: white;
+  text-align: left;
+  margin-top: 20px;
+}
+.mine .findMe #linkedin img, .mine .findMe #email img, .mine .findMe #whatsapp img, .mine .findMe #github img {
+  margin-top: 0px;
+  text-align: center;
+  border: none;
+  width: 32px;
+  height: 32px;
+}
+.mine .findMe #linkedin p, .mine .findMe #email p, .mine .findMe #whatsapp p, .mine .findMe #github p {
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+.mine .findMe #linkedin:hover, .mine .findMe #email:hover, .mine .findMe #whatsapp:hover, .mine .findMe #github:hover {
+  text-decoration: underline;
+}
+.myExperience {
+  padding: 20px;
+  max-width: 100%;
+  max-height: 100dvh;
+  border: 2px solid #f21f26;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.myExperience .text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 300px;
+  max-width: 70%;
+  background: #f19601;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 30px;
+  border: solid 1px #f21f26;
+  overflow: auto;
+  scrollbar-width: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.myExperience .text p {
+  color: #000000;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.myExperience .text h2 {
+  color: #251819;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 120px) and (max-width: 530px) {
+  .mine {
+    padding-top: 0px;
+    float: none;
+    max-width: 100%;
+    max-height: 100dvh;
+    margin-left: 0px;
+  }
+  .mine h1 {
+    text-align: center;
+    display: block !important;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .myExperience {
+    max-height: 100dvh;
+  }
+  .myExperience .text {
+    max-width: 100%;
+  }
+  header {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 531px) and (max-width: 768px) {
+  .mine {
+    margin-left: 0px;
+    float: left;
+  }
+  .myExperience .text {
+    scrollbar-width: auto;
+    max-width: 100%;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #73b295;
+}
+body h1 {
+  font-size: 52px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  border: solid 1px #ebc83a;
+  padding: 20px;
+}
+header h1 {
+  color: #000000;
+}/*# sourceMappingURL=pag-inicial.css.map */
