@@ -6,7 +6,7 @@
 
 🛠️ Tecnologias e Ferramentas que possuo experiência:
 - HTML5
-- JavaScript 
+- JavaScript
 - CSS3
 - SCSS/SASS
 - JavaScript
