@@ -16,8 +16,8 @@
 
 📫 Entre em contato via:
 
--LinkedIn:https://www.linkedin.com/in/ant%C3%B4nioleite/
+- LinkedIn:https://www.linkedin.com/in/ant%C3%B4nioleite/
 
-GitHub:https://github.com/xOmilk
+- GitHub:https://github.com/xOmilk
 
-WhatsApp: (75) 9 8859-5254
+- WhatsApp: (75) 9 8859-5254
